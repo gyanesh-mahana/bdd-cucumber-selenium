@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="241.455">
+    <testcase classname="Login feature" name="Login page title" time="102.84">
+        <system-out>
+            <![CDATA[Given user is on login page.................................................passed
+When user gets the title of the login page..................................passed
+Then title should be "Login - My Store".....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login feature" name="forgot password link" time="31.127">
+        <system-out>
+            <![CDATA[Given user is on login page.................................................passed
+Then Forgot your password? link should be displayed.........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login feature" name="Login with valid credentials" time="25.433">
+        <system-out>
+            <![CDATA[Given user is on login page.................................................passed
+When user type "demo@gkm.com" in email textbox..............................passed
+And user type "abc123" in password textbox..................................passed
+And user clicks on login button.............................................passed
+Then user gets the title of the account page................................passed
+And title should be "My account - My Store".................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login feature" name="Login with invalid credentials" time="25.714">
+        <system-out>
+            <![CDATA[Given user is on login page.................................................passed
+When user type "fake@abc.com" in email textbox..............................passed
+And user type "21423rv" in password textbox.................................passed
+And user clicks on login button.............................................passed
+Then user gets error message................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login feature" name="Login with invalid credentials 2" time="21.919">
+        <system-out>
+            <![CDATA[Given user is on login page.................................................passed
+When user type "demo@gkm.com" in email textbox..............................passed
+And user type "1234abc" in password textbox.................................passed
+And user clicks on login button.............................................passed
+Then user gets error message................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login feature" name="Login with invalid credentials 3" time="17.08">
+        <system-out>
+            <![CDATA[Given user is on login page.................................................passed
+When user type "fake@gkm.com" in email textbox..............................passed
+And user type "abc123" in password textbox..................................passed
+And user clicks on login button.............................................passed
+Then user gets error message................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login feature" name="Login with invalid credentials 4" time="16.693">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given user is on login page.................................................passed
+When user type "demo@gkm.com" in email textbox..............................passed
+And user type "abc123" in password textbox..................................passed
+And user clicks on login button.............................................passed
+Then user gets error message................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.stepdefinitions.LoginSteps.user_gets_error_message(LoginSteps.java:82)
+	at ✽.user gets error message(file:///home/gyanesh/git/POMHybridProject/src/test/resources/com/features/LoginPage.feature:31)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
