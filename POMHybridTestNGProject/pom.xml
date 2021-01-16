@@ -106,6 +106,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
 				<configuration>
+					<!-- testNG file -->
+					<!-- suiteXmlFiles>testng.xml</suiteXmlFiles -->
 					<includes>
 						<include>**/TestNGRunner.java</include>
 					</includes>
