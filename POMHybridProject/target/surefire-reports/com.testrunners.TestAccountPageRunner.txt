@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.testrunners.TestAccountPageRunner
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 48.917 s <<< FAILURE! - in com.testrunners.TestAccountPageRunner
-Personal informtion and order details(Account feature)  Time elapsed: 39.329 s  <<< FAILURE!
-java.lang.AssertionError
-
