@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="241.455">
-    <testcase classname="Login feature" name="Login page title" time="102.84">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="214.957">
+    <testcase classname="Login feature" name="Login page title" time="97.634">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user gets the title of the login page..................................passed
@@ -8,14 +8,14 @@ Then title should be "Login - My Store".....................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login feature" name="forgot password link" time="31.127">
+    <testcase classname="Login feature" name="forgot password link" time="25.278">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 Then Forgot your password? link should be displayed.........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login feature" name="Login with valid credentials" time="25.433">
+    <testcase classname="Login feature" name="Login with valid credentials" time="17.313">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user type "demo@gkm.com" in email textbox..............................passed
@@ -26,7 +26,7 @@ And title should be "My account - My Store".................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login feature" name="Login with invalid credentials" time="25.714">
+    <testcase classname="Login feature" name="Login with invalid credentials" time="12.965">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user type "fake@abc.com" in email textbox..............................passed
@@ -36,7 +36,7 @@ Then user gets error message................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login feature" name="Login with invalid credentials 2" time="21.919">
+    <testcase classname="Login feature" name="Login with invalid credentials 2" time="34.816">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user type "demo@gkm.com" in email textbox..............................passed
@@ -46,7 +46,7 @@ Then user gets error message................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login feature" name="Login with invalid credentials 3" time="17.08">
+    <testcase classname="Login feature" name="Login with invalid credentials 3" time="12.385">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user type "fake@gkm.com" in email textbox..............................passed
@@ -56,7 +56,7 @@ Then user gets error message................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login feature" name="Login with invalid credentials 4" time="16.693">
+    <testcase classname="Login feature" name="Login with invalid credentials 4" time="13.64">
         <failure message="" type="java.lang.AssertionError">
             <![CDATA[Given user is on login page.................................................passed
 When user type "demo@gkm.com" in email textbox..............................passed
@@ -70,7 +70,7 @@ java.lang.AssertionError
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
 	at com.stepdefinitions.LoginSteps.user_gets_error_message(LoginSteps.java:82)
-	at ✽.user gets error message(file:///home/gyanesh/git/POMHybridProject/src/test/resources/com/features/LoginPage.feature:31)
+	at ✽.user gets error message(file:///home/gyanesh/git/bdd-cucumber-selenium/POMHybridProject/src/test/resources/com/features/LoginPage.feature:31)
 ]]>
         </failure>
     </testcase>
