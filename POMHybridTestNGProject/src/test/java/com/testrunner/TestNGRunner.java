@@ -17,8 +17,12 @@ import io.cucumber.testng.CucumberOptions;
 				// for extent reports
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				// for tracking threads
-				"timeline:test-output-thread/" },
-		tags = "@critical")
+				"timeline:test-output-thread/",
+				// plugin for failure scenario rerun
+				"rerun:target/fauiledrerun.txt"
+				}
+//		tags = "@critical"
+		)
 
 
 public class TestNGRunner extends AbstractTestNGCucumberTests {
