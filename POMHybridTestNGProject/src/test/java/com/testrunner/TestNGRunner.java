@@ -19,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
 				// for tracking threads
 				"timeline:test-output-thread/",
 				// plugin for failure scenario rerun
-				"rerun:target/fauiledrerun.txt"
+				"rerun:target/failedrerun.txt"
 				}
 //		tags = "@critical"
 		)
