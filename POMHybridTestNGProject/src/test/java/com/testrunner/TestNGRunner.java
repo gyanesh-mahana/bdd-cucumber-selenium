@@ -20,8 +20,8 @@ import io.cucumber.testng.CucumberOptions;
 				"timeline:test-output-thread/",
 				// plugin for failure scenario rerun
 				"rerun:target/failedrerun.txt"
-				}
-//		tags = "@critical"
+				},
+		tags = "@critical"
 		)
 
 
