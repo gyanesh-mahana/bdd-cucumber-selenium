@@ -32,34 +32,29 @@
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>${selenium.version}</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>${webdrivermanager.version}</version>
 		</dependency>
-
 		<!-- extent report adapter for cucumber v6 -->
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
@@ -83,8 +78,6 @@
 			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
@@ -106,14 +99,12 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
 				<configuration>
-					<!-- testNG file -->
-					<!-- suiteXmlFiles>testng.xml</suiteXmlFiles -->
-					<includes>
-						<include>**/TestNGRunner.java</include>
-					</includes>
+					<!-- testng.xml file configuration -->
+					<suiteXmlFiles>testng.xml</suiteXmlFiles>
+					<!-- includes> <include>**/TestNGRunner.java</include> </includes -->
 					<parallel>methods</parallel>
-					<threadCount>4</threadCount>
-					<useUnlimitedThreads>false</useUnlimitedThreads>
+					<!-- threadCount>4</threadCount -->
+					<!-- useUnlimitedThreads>true</useUnlimitedThreads -->
 				</configuration>
 			</plugin>
 		</plugins>
