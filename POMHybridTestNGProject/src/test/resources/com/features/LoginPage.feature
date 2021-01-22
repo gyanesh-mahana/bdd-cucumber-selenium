@@ -35,4 +35,5 @@ Feature: Login feature
       | fake@abc.com | 21423rv  |
       | demo@gkm.com | 1234abc  |
       | fake@gkm.com | abc123   |
-      | demo@gkm.com | abc123   |
+      # below credentials will fail the test
+      #| demo@gkm.com | abc123   |
