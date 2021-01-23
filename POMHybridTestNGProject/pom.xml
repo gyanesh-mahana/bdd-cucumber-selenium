@@ -10,6 +10,8 @@
 	<name>POMHybridTestNGProject</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
+	<!-- adding war packaging to deploy in tomcat server in jenkins -->
+	<packaging>war</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -91,6 +93,15 @@
 					<encoding>UTF-8</encoding>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<!--webXml>/path/to/web.xml</webXml -->
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 
